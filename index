@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Indonesia Survey Data Analysis Dashboards</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: #f1f4f8;
+            color: #18283b;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .main-container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        .page-title {
+            margin-bottom: 30px;
+        }
+        .page-title h1 {
+            font-size: 28px;
+            margin: 0 0 10px;
+            color: #18283b;
+        }
+        .page-title p {
+            color: #596b7e;
+            margin: 0;
+            font-size: 15px;
+        }
+        .nav-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .nav-btn {
+            display: block;
+            background: #ffffff;
+            color: #125b76;
+            text-decoration: none;
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1px solid #dbe3ec;
+            box-shadow: 0 4px 12px rgba(20, 43, 73, 0.05);
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .nav-btn:hover {
+            border-color: #126b83;
+            background: #edf6fa;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(20, 43, 73, 0.1);
+        }
+        .nav-btn .description {
+            display: block;
+            font-size: 13px;
+            font-weight: normal;
+            color: #607185;
+            margin-top: 4px;
+        }
+        .nav-btn::after {
+            content: "→";
+            position: absolute;
+            right: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #126b83;
+            opacity: 0.6;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .nav-btn:hover::after {
+            opacity: 1;
+            transform: translateY(-50%) translateX(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header class="page-title">
+            <h1>Indonesia Survey Data Dashboards</h1>
+            <p>Please select an analysis report to view:</p>
+        </header>
+
+        <nav class="nav-cards">
+            <a href="selected_questions.html" class="nav-btn">
+                Selected Questions Analysis
+                <span class="description">View national and Java provincial survey questions and charts</span>
+            </a>
+
+            <a href="demographics.html" class="nav-btn">
+                Demographic Data
+                <span class="description">Basic demographic distribution data of respondents</span>
+            </a>
+
+            <a href="donation_comparison.html" class="nav-btn">
+                Donation Comparison Analysis
+                <span class="description">Comparative analysis of donation behaviors across regions and organizations</span>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>
