@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Donation comparison</title>
+  <style>*{box-sizing:border-box}body{margin:0;background:#f1f4f8;color:#18283b;font-family:Arial,Helvetica,sans-serif;line-height:1.5}main{max-width:1250px;margin:auto;padding:36px 24px}h1{font-size:30px;margin:0 0 10px}.intro{font-size:14px;color:#526477}.card{background:white;border:1px solid #dbe3ec;border-radius:14px;margin:26px 0;overflow:hidden}.card header{padding:20px 26px;border-bottom:1px solid #e4eaf1}h2{font-size:20px;margin:0}h3{font-size:14px;margin:0 0 12px}.chart{padding:20px 26px}.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;margin-bottom:18px}.legend span{display:flex;align-items:center;gap:6px}.legend i{width:11px;height:11px}.group,.axis{display:grid;grid-template-columns:28% 1fr;gap:20px}.group{padding:12px 0;border-top:1px solid #e4eaf1}.label{font-size:14px}.bars{display:grid;gap:7px}.series{display:flex;align-items:center;gap:8px}.track{flex:1;height:15px;background:#f0f3f7;border-radius:2px;overflow:hidden}.fill{height:100%}.bar-value{width:72px;font-size:12px;text-align:right}.ticks{display:flex;justify-content:space-between;margin-right:80px;font-size:11px;color:#607185}.table-scroll{padding:0 26px;overflow-x:auto}table{width:100%;border-collapse:collapse;table-layout:fixed;min-width:900px;font-size:14px}th,td{padding:12px 10px;border-bottom:1px solid #e2e8ef;text-align:right;vertical-align:top}thead th{background:#edf3f8}thead th:first-child{width:22%;text-align:left}tbody th{text-align:left;font-weight:400}tbody tr:nth-child(even){background:#f8fafc}thead th:nth-child(3),td:nth-child(3){background:#fff7cc}small{display:block;font-size:11px;color:#607185;font-weight:400;overflow-wrap:anywhere}.note{font-size:12px;color:#607185;padding:16px 26px;margin:0}@media(max-width:700px){main{padding:20px 12px}.group{grid-template-columns:1fr;gap:8px}.axis{grid-template-columns:1fr}.axis>span{display:none}}</style>
+</head>
+<html lang="en">
+  <body>
+    <main>
+      <h1>Donation comparison</h1>
+      <p class="intro">National / West Java / East Java / Central Java</p>
+      <p class="intro">Method: sum of segmented channel amounts multiplied by w_cal, following inkind_cash.R. Informal includes intermediaries and direct giving; Waqf direct giving is zero by the reference definition. Only the three selected donation types are included, not zakat fitrah or qurban.</p>
+      <p class="intro">Amounts retain the supplied segmented data's time basis and valuation; no additional annualization or weight normalization is applied. The source reference does not establish the time basis. Confirm a common reference period before interpreting the combined amount as an annual total. National includes the three provinces; these are weighted totals, not per-person averages.</p>
+      <section class="card">
+        <header>
+          <h2>Total donations across three types</h2>
+        </header>
+        <div class="chart">
+          <h3>Weighted donation amount (IDR trillion)</h3>
+          <div class="legend">
+            <span>
+              <i style="background:#34495e"></i>
+              National
+            </span>
+            <span>
+              <i style="background:#f4c400"></i>
+              West Java
+            </span>
+            <span>
+              <i style="background:#355b50"></i>
+              East Java
+            </span>
+            <span>
+              <i style="background:#514660"></i>
+              Central Java
+            </span>
+          </div>
+          <div class="axis">
+            <span></span>
+            <div class="ticks">
+              <span>0</span>
+              <span>62.5</span>
+              <span>125</span>
+              <span>187.5</span>
+              <span>250</span>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">Total donations</div>
+            <div class="bars">
+              <div class="series" title="National 211,754,272,374,129 IDR">
+                <div class="track">
+                  <div class="fill" style="width:84.701709%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">211.754</span>
+              </div>
+              <div class="series" title="West Java 42,316,267,265,111 IDR">
+                <div class="track">
+                  <div class="fill" style="width:16.926507%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">42.316</span>
+              </div>
+              <div class="series" title="East Java 46,135,663,777,833 IDR">
+                <div class="track">
+                  <div class="fill" style="width:18.454266%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">46.136</span>
+              </div>
+              <div class="series" title="Central Java 29,612,372,603,259 IDR">
+                <div class="track">
+                  <div class="fill" style="width:11.844949%;background:#514660"></div>
+                </div>
+                <span class="bar-value">29.612</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>
+                  National
+                  <small>Sample n=8360</small>
+                </th>
+                <th>
+                  West Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  East Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  Central Java
+                  <small>Sample n=620</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Total donations</th>
+                <td>
+                  <strong class="estimate">211.754</strong>
+                  <small>IDR 211,754,272,374,129</small>
+                  <small>Positive-amount n=6055</small>
+                </td>
+                <td>
+                  <strong class="estimate">42.316</strong>
+                  <small>IDR 42,316,267,265,111</small>
+                  <small>Positive-amount n=452</small>
+                </td>
+                <td>
+                  <strong class="estimate">46.136</strong>
+                  <small>IDR 46,135,663,777,833</small>
+                  <small>Positive-amount n=453</small>
+                </td>
+                <td>
+                  <strong class="estimate">29.612</strong>
+                  <small>IDR 29,612,372,603,259</small>
+                  <small>Positive-amount n=452</small>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Main figures are IDR trillion; exact rounded IDR amounts are shown below. 
+          Sample n is the unweighted number with positive finite weights. Positive-amount n counts unique respondents with an amount above zero in that row; it is not a weighted population count. Missing amounts are set to zero as in the reference script.
+        </p>
+      </section>
+      <section class="card">
+        <header>
+          <h2>Formal and informal split</h2>
+        </header>
+        <div class="chart">
+          <h3>Share of weighted donation value (%)</h3>
+          <div class="legend">
+            <span>
+              <i style="background:#34495e"></i>
+              National
+            </span>
+            <span>
+              <i style="background:#f4c400"></i>
+              West Java
+            </span>
+            <span>
+              <i style="background:#355b50"></i>
+              East Java
+            </span>
+            <span>
+              <i style="background:#514660"></i>
+              Central Java
+            </span>
+          </div>
+          <div class="axis">
+            <span></span>
+            <div class="ticks">
+              <span>0</span>
+              <span>25</span>
+              <span>50</span>
+              <span>75</span>
+              <span>100</span>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">Formal</div>
+            <div class="bars">
+              <div class="series" title="National 41,884,178,489,287 IDR">
+                <div class="track">
+                  <div class="fill" style="width:19.779614%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">19.8%</span>
+              </div>
+              <div class="series" title="West Java 5,751,609,110,570 IDR">
+                <div class="track">
+                  <div class="fill" style="width:13.591958%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">13.6%</span>
+              </div>
+              <div class="series" title="East Java 11,380,362,822,734 IDR">
+                <div class="track">
+                  <div class="fill" style="width:24.667170%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">24.7%</span>
+              </div>
+              <div class="series" title="Central Java 4,846,985,127,293 IDR">
+                <div class="track">
+                  <div class="fill" style="width:16.368108%;background:#514660"></div>
+                </div>
+                <span class="bar-value">16.4%</span>
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">Informal</div>
+            <div class="bars">
+              <div class="series" title="National 169,870,093,884,842 IDR">
+                <div class="track">
+                  <div class="fill" style="width:80.220386%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">80.2%</span>
+              </div>
+              <div class="series" title="West Java 36,564,658,154,541 IDR">
+                <div class="track">
+                  <div class="fill" style="width:86.408042%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">86.4%</span>
+              </div>
+              <div class="series" title="East Java 34,755,300,955,099 IDR">
+                <div class="track">
+                  <div class="fill" style="width:75.332830%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">75.3%</span>
+              </div>
+              <div class="series" title="Central Java 24,765,387,475,966 IDR">
+                <div class="track">
+                  <div class="fill" style="width:83.631892%;background:#514660"></div>
+                </div>
+                <span class="bar-value">83.6%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>
+                  National
+                  <small>Sample n=8360</small>
+                </th>
+                <th>
+                  West Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  East Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  Central Java
+                  <small>Sample n=620</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Formal</th>
+                <td>
+                  <strong class="estimate">19.8%</strong>
+                  <small>IDR 41,884,178,489,287</small>
+                  <small>Positive-amount n=1690</small>
+                </td>
+                <td>
+                  <strong class="estimate">13.6%</strong>
+                  <small>IDR 5,751,609,110,570</small>
+                  <small>Positive-amount n=112</small>
+                </td>
+                <td>
+                  <strong class="estimate">24.7%</strong>
+                  <small>IDR 11,380,362,822,734</small>
+                  <small>Positive-amount n=134</small>
+                </td>
+                <td>
+                  <strong class="estimate">16.4%</strong>
+                  <small>IDR 4,846,985,127,293</small>
+                  <small>Positive-amount n=121</small>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Informal</th>
+                <td>
+                  <strong class="estimate">80.2%</strong>
+                  <small>IDR 169,870,093,884,842</small>
+                  <small>Positive-amount n=5996</small>
+                </td>
+                <td>
+                  <strong class="estimate">86.4%</strong>
+                  <small>IDR 36,564,658,154,541</small>
+                  <small>Positive-amount n=451</small>
+                </td>
+                <td>
+                  <strong class="estimate">75.3%</strong>
+                  <small>IDR 34,755,300,955,099</small>
+                  <small>Positive-amount n=448</small>
+                </td>
+                <td>
+                  <strong class="estimate">83.6%</strong>
+                  <small>IDR 24,765,387,475,966</small>
+                  <small>Positive-amount n=446</small>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Shares refer to money, not people. Denominator: total weighted donations across all three types in the same region. 
+          Sample n is the unweighted number with positive finite weights. Positive-amount n counts unique respondents with an amount above zero in that row; it is not a weighted population count. Missing amounts are set to zero as in the reference script.
+        </p>
+      </section>
+      <section class="card">
+        <header>
+          <h2>Cash and in-kind split</h2>
+        </header>
+        <div class="chart">
+          <h3>Share of weighted donation value (%)</h3>
+          <div class="legend">
+            <span>
+              <i style="background:#34495e"></i>
+              National
+            </span>
+            <span>
+              <i style="background:#f4c400"></i>
+              West Java
+            </span>
+            <span>
+              <i style="background:#355b50"></i>
+              East Java
+            </span>
+            <span>
+              <i style="background:#514660"></i>
+              Central Java
+            </span>
+          </div>
+          <div class="axis">
+            <span></span>
+            <div class="ticks">
+              <span>0</span>
+              <span>25</span>
+              <span>50</span>
+              <span>75</span>
+              <span>100</span>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">Cash</div>
+            <div class="bars">
+              <div class="series" title="National 145,905,854,703,246 IDR">
+                <div class="track">
+                  <div class="fill" style="width:68.903382%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">68.9%</span>
+              </div>
+              <div class="series" title="West Java 27,925,079,754,934 IDR">
+                <div class="track">
+                  <div class="fill" style="width:65.991359%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">66.0%</span>
+              </div>
+              <div class="series" title="East Java 30,712,523,394,823 IDR">
+                <div class="track">
+                  <div class="fill" style="width:66.570026%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">66.6%</span>
+              </div>
+              <div class="series" title="Central Java 22,335,735,049,841 IDR">
+                <div class="track">
+                  <div class="fill" style="width:75.427036%;background:#514660"></div>
+                </div>
+                <span class="bar-value">75.4%</span>
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">In-kind</div>
+            <div class="bars">
+              <div class="series" title="National 65,848,417,670,883 IDR">
+                <div class="track">
+                  <div class="fill" style="width:31.096618%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">31.1%</span>
+              </div>
+              <div class="series" title="West Java 14,391,187,510,177 IDR">
+                <div class="track">
+                  <div class="fill" style="width:34.008641%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">34.0%</span>
+              </div>
+              <div class="series" title="East Java 15,423,140,383,010 IDR">
+                <div class="track">
+                  <div class="fill" style="width:33.429974%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">33.4%</span>
+              </div>
+              <div class="series" title="Central Java 7,276,637,553,418 IDR">
+                <div class="track">
+                  <div class="fill" style="width:24.572964%;background:#514660"></div>
+                </div>
+                <span class="bar-value">24.6%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>
+                  National
+                  <small>Sample n=8360</small>
+                </th>
+                <th>
+                  West Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  East Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  Central Java
+                  <small>Sample n=620</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Cash</th>
+                <td>
+                  <strong class="estimate">68.9%</strong>
+                  <small>IDR 145,905,854,703,246</small>
+                  <small>Positive-amount n=5637</small>
+                </td>
+                <td>
+                  <strong class="estimate">66.0%</strong>
+                  <small>IDR 27,925,079,754,934</small>
+                  <small>Positive-amount n=417</small>
+                </td>
+                <td>
+                  <strong class="estimate">66.6%</strong>
+                  <small>IDR 30,712,523,394,823</small>
+                  <small>Positive-amount n=406</small>
+                </td>
+                <td>
+                  <strong class="estimate">75.4%</strong>
+                  <small>IDR 22,335,735,049,841</small>
+                  <small>Positive-amount n=419</small>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">In-kind</th>
+                <td>
+                  <strong class="estimate">31.1%</strong>
+                  <small>IDR 65,848,417,670,883</small>
+                  <small>Positive-amount n=953</small>
+                </td>
+                <td>
+                  <strong class="estimate">34.0%</strong>
+                  <small>IDR 14,391,187,510,177</small>
+                  <small>Positive-amount n=74</small>
+                </td>
+                <td>
+                  <strong class="estimate">33.4%</strong>
+                  <small>IDR 15,423,140,383,010</small>
+                  <small>Positive-amount n=124</small>
+                </td>
+                <td>
+                  <strong class="estimate">24.6%</strong>
+                  <small>IDR 7,276,637,553,418</small>
+                  <small>Positive-amount n=78</small>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Shares refer to money, not people. Denominator: total weighted donations across all three types in the same region. 
+          Sample n is the unweighted number with positive finite weights. Positive-amount n counts unique respondents with an amount above zero in that row; it is not a weighted population count. Missing amounts are set to zero as in the reference script.
+        </p>
+      </section>
+      <section class="card">
+        <header>
+          <h2>Giving types as a share of total donations</h2>
+        </header>
+        <div class="chart">
+          <h3>Share of weighted donation value (%)</h3>
+          <div class="legend">
+            <span>
+              <i style="background:#34495e"></i>
+              National
+            </span>
+            <span>
+              <i style="background:#f4c400"></i>
+              West Java
+            </span>
+            <span>
+              <i style="background:#355b50"></i>
+              East Java
+            </span>
+            <span>
+              <i style="background:#514660"></i>
+              Central Java
+            </span>
+          </div>
+          <div class="axis">
+            <span></span>
+            <div class="ticks">
+              <span>0</span>
+              <span>25</span>
+              <span>50</span>
+              <span>75</span>
+              <span>100</span>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">Waqf</div>
+            <div class="bars">
+              <div class="series" title="National 25,999,218,238,738 IDR">
+                <div class="track">
+                  <div class="fill" style="width:12.278014%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">12.3%</span>
+              </div>
+              <div class="series" title="West Java 1,232,452,418,347 IDR">
+                <div class="track">
+                  <div class="fill" style="width:2.912479%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">2.9%</span>
+              </div>
+              <div class="series" title="East Java 6,232,964,414,144 IDR">
+                <div class="track">
+                  <div class="fill" style="width:13.510079%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">13.5%</span>
+              </div>
+              <div class="series" title="Central Java 2,247,661,047,229 IDR">
+                <div class="track">
+                  <div class="fill" style="width:7.590277%;background:#514660"></div>
+                </div>
+                <span class="bar-value">7.6%</span>
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">Zakat Maal</div>
+            <div class="bars">
+              <div class="series" title="National 19,712,133,057,015 IDR">
+                <div class="track">
+                  <div class="fill" style="width:9.308966%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">9.3%</span>
+              </div>
+              <div class="series" title="West Java 4,811,497,976,009 IDR">
+                <div class="track">
+                  <div class="fill" style="width:11.370327%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">11.4%</span>
+              </div>
+              <div class="series" title="East Java 2,934,164,074,056 IDR">
+                <div class="track">
+                  <div class="fill" style="width:6.359861%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">6.4%</span>
+              </div>
+              <div class="series" title="Central Java 3,792,422,746,361 IDR">
+                <div class="track">
+                  <div class="fill" style="width:12.806886%;background:#514660"></div>
+                </div>
+                <span class="bar-value">12.8%</span>
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">Infaq / Sadaqah</div>
+            <div class="bars">
+              <div class="series" title="National 166,042,921,078,376 IDR">
+                <div class="track">
+                  <div class="fill" style="width:78.413021%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">78.4%</span>
+              </div>
+              <div class="series" title="West Java 36,272,316,870,755 IDR">
+                <div class="track">
+                  <div class="fill" style="width:85.717194%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">85.7%</span>
+              </div>
+              <div class="series" title="East Java 36,968,535,289,633 IDR">
+                <div class="track">
+                  <div class="fill" style="width:80.130060%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">80.1%</span>
+              </div>
+              <div class="series" title="Central Java 23,572,288,809,668 IDR">
+                <div class="track">
+                  <div class="fill" style="width:79.602837%;background:#514660"></div>
+                </div>
+                <span class="bar-value">79.6%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>
+                  National
+                  <small>Sample n=8360</small>
+                </th>
+                <th>
+                  West Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  East Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  Central Java
+                  <small>Sample n=620</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Waqf</th>
+                <td>
+                  <strong class="estimate">12.3%</strong>
+                  <small>IDR 25,999,218,238,738</small>
+                  <small>Positive-amount n=619</small>
+                </td>
+                <td>
+                  <strong class="estimate">2.9%</strong>
+                  <small>IDR 1,232,452,418,347</small>
+                  <small>Positive-amount n=9</small>
+                </td>
+                <td>
+                  <strong class="estimate">13.5%</strong>
+                  <small>IDR 6,232,964,414,144</small>
+                  <small>Positive-amount n=35</small>
+                </td>
+                <td>
+                  <strong class="estimate">7.6%</strong>
+                  <small>IDR 2,247,661,047,229</small>
+                  <small>Positive-amount n=34</small>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Zakat Maal</th>
+                <td>
+                  <strong class="estimate">9.3%</strong>
+                  <small>IDR 19,712,133,057,015</small>
+                  <small>Positive-amount n=848</small>
+                </td>
+                <td>
+                  <strong class="estimate">11.4%</strong>
+                  <small>IDR 4,811,497,976,009</small>
+                  <small>Positive-amount n=38</small>
+                </td>
+                <td>
+                  <strong class="estimate">6.4%</strong>
+                  <small>IDR 2,934,164,074,056</small>
+                  <small>Positive-amount n=64</small>
+                </td>
+                <td>
+                  <strong class="estimate">12.8%</strong>
+                  <small>IDR 3,792,422,746,361</small>
+                  <small>Positive-amount n=33</small>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Infaq / Sadaqah</th>
+                <td>
+                  <strong class="estimate">78.4%</strong>
+                  <small>IDR 166,042,921,078,376</small>
+                  <small>Positive-amount n=5713</small>
+                </td>
+                <td>
+                  <strong class="estimate">85.7%</strong>
+                  <small>IDR 36,272,316,870,755</small>
+                  <small>Positive-amount n=446</small>
+                </td>
+                <td>
+                  <strong class="estimate">80.1%</strong>
+                  <small>IDR 36,968,535,289,633</small>
+                  <small>Positive-amount n=431</small>
+                </td>
+                <td>
+                  <strong class="estimate">79.6%</strong>
+                  <small>IDR 23,572,288,809,668</small>
+                  <small>Positive-amount n=442</small>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Shares refer to money, not people. Denominator: total weighted donations across all three types in the same region. 
+          Sample n is the unweighted number with positive finite weights. Positive-amount n counts unique respondents with an amount above zero in that row; it is not a weighted population count. Missing amounts are set to zero as in the reference script.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+</html>
