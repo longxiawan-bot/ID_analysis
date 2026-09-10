@@ -14,8 +14,128 @@
     <main>
       <h1>Donation comparison</h1>
       <p class="intro">National / West Java / East Java / Central Java</p>
-      <p class="intro">Method: sum of segmented channel amounts multiplied by w_cal, following inkind_cash.R. Informal includes intermediaries and direct giving; Waqf direct giving is zero by the reference definition. Only the three selected donation types are included, not zakat fitrah or qurban.</p>
+      <p class="intro">The first card shows the weighted ziswaf_ind_imp overall total, including Zakat Fitrah and Qurban. The remaining four cards follow inkind_cash.R using segmented channel amounts for Waqf, Zakat Maal and Infaq/Sadaqah only. Informal includes intermediaries and direct giving; Waqf direct giving is zero by the reference definition.</p>
       <p class="intro">Amounts retain the supplied segmented data's time basis and valuation; no additional annualization or weight normalization is applied. The source reference does not establish the time basis. Confirm a common reference period before interpreting the combined amount as an annual total. National includes the three provinces; these are weighted totals, not per-person averages.</p>
+      <section class="card">
+        <header>
+          <h2>All giving: total ZISWAF including Qurban</h2>
+        </header>
+        <div class="chart">
+          <h3>Weighted donation amount (IDR trillion)</h3>
+          <div class="legend">
+            <span>
+              <i style="background:#34495e"></i>
+              National
+            </span>
+            <span>
+              <i style="background:#f4c400"></i>
+              West Java
+            </span>
+            <span>
+              <i style="background:#355b50"></i>
+              East Java
+            </span>
+            <span>
+              <i style="background:#514660"></i>
+              Central Java
+            </span>
+          </div>
+          <div class="axis">
+            <span></span>
+            <div class="ticks">
+              <span>0</span>
+              <span>100</span>
+              <span>200</span>
+              <span>300</span>
+              <span>400</span>
+            </div>
+          </div>
+          <div class="group">
+            <div class="label">All giving</div>
+            <div class="bars">
+              <div class="series" title="National 343,081,815,089,951 IDR">
+                <div class="track">
+                  <div class="fill" style="width:85.770454%;background:#34495e"></div>
+                </div>
+                <span class="bar-value">343.082</span>
+              </div>
+              <div class="series" title="West Java 65,604,647,738,174 IDR">
+                <div class="track">
+                  <div class="fill" style="width:16.401162%;background:#f4c400"></div>
+                </div>
+                <span class="bar-value">65.605</span>
+              </div>
+              <div class="series" title="East Java 76,200,310,448,915 IDR">
+                <div class="track">
+                  <div class="fill" style="width:19.050078%;background:#355b50"></div>
+                </div>
+                <span class="bar-value">76.200</span>
+              </div>
+              <div class="series" title="Central Java 47,119,813,383,089 IDR">
+                <div class="track">
+                  <div class="fill" style="width:11.779953%;background:#514660"></div>
+                </div>
+                <span class="bar-value">47.120</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>
+                  National
+                  <small>Sample n=8360</small>
+                </th>
+                <th>
+                  West Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  East Java
+                  <small>Sample n=620</small>
+                </th>
+                <th>
+                  Central Java
+                  <small>Sample n=620</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">All giving</th>
+                <td>
+                  <strong class="estimate">343.082</strong>
+                  <small>IDR 343,081,815,089,951</small>
+                  <small>Positive-amount n=8308</small>
+                </td>
+                <td>
+                  <strong class="estimate">65.605</strong>
+                  <small>IDR 65,604,647,738,174</small>
+                  <small>Positive-amount n=620</small>
+                </td>
+                <td>
+                  <strong class="estimate">76.200</strong>
+                  <small>IDR 76,200,310,448,915</small>
+                  <small>Positive-amount n=617</small>
+                </td>
+                <td>
+                  <strong class="estimate">47.120</strong>
+                  <small>IDR 47,119,813,383,089</small>
+                  <small>Positive-amount n=620</small>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Source: ziswaf_ind_imp, multiplied by w_cal. Includes Zakat Fitrah, Qurban, Waqf, Zakat Maal and Infaq/Sadaqah. This imputed overall total uses a different scope and preparation from the segmented three-type totals below; it is not their share denominator.</p>
+        <p class="note">
+          Main figures are IDR trillion; exact rounded IDR amounts are shown below. 
+          Sample n is the unweighted number with positive finite weights. Positive-amount n counts unique respondents with an amount above zero in that row; it is not a weighted population count. Missing amounts are set to zero as in the reference script.
+        </p>
+      </section>
       <section class="card">
         <header>
           <h2>Total donations across three types</h2>
